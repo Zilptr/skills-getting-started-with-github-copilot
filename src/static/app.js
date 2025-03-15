@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <hr style="border-top: 1px dotted #ddd;">
           <p><strong>Current Participants:</strong></p>
-          <p class="participants">${filteredParticipants.join(", ") || "None"}</p>
+          <div class="participants">${filteredParticipants.map(participant => `<span class="participant">${participant}</span>`).join(" ") || "None"}</div>
         `;
 
         activitiesList.appendChild(activityCard);
