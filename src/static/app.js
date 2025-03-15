@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <hr style="border-top: 1px dotted #ddd;">
-          <p><strong>Current Participants:</strong> <span class="participants">${filteredParticipants.join(", ") || "None"}</span></p>
+          <p><strong>Current Participants:</strong></p>
+          <p class="participants">${filteredParticipants.join(", ") || "None"}</p>
         `;
 
         activitiesList.appendChild(activityCard);
