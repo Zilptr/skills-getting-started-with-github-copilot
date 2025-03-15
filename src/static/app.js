@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${details.description}</p>
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
+          <hr style="border-top: 1px dotted #ddd;">
           <p><strong>Current Participants:</strong> <span class="participants">${filteredParticipants.join(", ") || "None"}</span></p>
         `;
 
