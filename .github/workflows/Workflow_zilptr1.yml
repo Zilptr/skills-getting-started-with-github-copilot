@@ -30,7 +30,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             github.projects.createCard({
-            column_id: "qq",
+            column_id: ${{column_id}},
             content_id: context.payload.issue.id,
             content_type: "Issue"
             });
