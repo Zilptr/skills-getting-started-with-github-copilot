@@ -4,6 +4,7 @@ on:
     types: [opened]
 permissions:
   pull-requests: write
+  issues: write
 jobs:
   comment:
     runs-on: ubuntu-latest
